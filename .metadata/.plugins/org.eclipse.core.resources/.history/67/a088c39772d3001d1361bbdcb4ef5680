@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form>
+			<h2>1. 텍스트를 입력 받는 양식 태그</h2>
+			<input type="text">
+		</form>
+	</body>
+</html>

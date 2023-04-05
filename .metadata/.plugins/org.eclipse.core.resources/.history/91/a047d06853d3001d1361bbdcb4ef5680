@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="https://naver.com" target="_blank"> 네이버</a>
+	<br>
+	<a href="/clientweb/html/lounge.html" target="_blank"> 문서 연결(절대경로)</a>
+	<a href="lounge.html" target="_blank"> 문서 연결(상대경로)</a>
+	<br>
+	<a herf="./media/image2.html"><img src="/clientweb/images/bts2.jpg"></a>
+</body>
+</html>

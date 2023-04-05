@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<table border="1" width="500">
+			<tr>
+				<td>번호</td>
+				<td>제목</td>
+				<td>저자</td>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>리라클영어 기본서</td>
+				<td>이리라</td>
+			</tr>	
+			
+			<tr>
+				<td>2</td>
+				<td>컴퓨터 과학이 여는 세상</td>
+				<td>이광근</td>
+			</tr>
+			
+		</table>
+</body>
+</html>

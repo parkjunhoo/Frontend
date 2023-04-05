@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="6">한국의 차</th>
+				</tr>
+				
+				<tr>
+					<th rowspan="6">뿌리차</th>
+					<td>인삼차</td>
+					<th rowspan="9">과일차</th>
+					<td>인삼차</td>
+				</tr>
+			</thead>
+		</table>
+	</body>
+</html>

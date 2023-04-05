@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h2>오디오와 비디오 삽입</h2>
+		<audio src="../../media/Skidrow.mp3" 
+			controls="controls" autoplay="autoplay"></audio>
+			
+			<audio src="../../media/Skidrow.mp3"></audio>
+	</body>
+</html>
