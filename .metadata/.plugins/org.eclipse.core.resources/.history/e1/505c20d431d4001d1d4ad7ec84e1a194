@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			*{
+				color: blue;
+			}
+			
+			/* li{
+				color:red;
+			} */
+			
+			.mycontent{
+				color:orange;
+			}
+			
+			
+			#myid{
+				background-color: red;
+			}
+			
+			h3,h4{
+				color : olive;
+				font-size : 18pt;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li class="mycontent">HTML</li>
+				<li id ="myid">CSS</li>
+				<li>javascript</li>
+			</ul>
+			
+			<div>servlet</div>
+			<p class="mycontent">jsp</p>
+			<div>spring</div>
+		</div>
+		<h3>테스트1</h3>
+		<h4>테스트1</h4>
+	</body>
+</html>

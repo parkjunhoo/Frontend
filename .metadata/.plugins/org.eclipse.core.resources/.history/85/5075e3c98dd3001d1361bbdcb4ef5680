@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body style="background-color: black;">
+		<div id="page-wrapper" style="width:80%; margin:10px auto;">
+			<header>
+				<h1 style="color: white;">blog</h1>
+			</header>
+			
+			<nav>
+			</nav>
+			
+			<div id="content">
+				<section>
+				</section>
+			</div>
+			
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

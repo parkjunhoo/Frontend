@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body style="background-color: #f9f9f9;">
+		<div id="page-wrapper" style="width:80%; margin:10px auto;">
+			<header>
+				<h1 style="margin:0;">HTML5 Example Preview</h1>
+				<h6 style="margin:0;">한빛아카데미</h6>
+			</header>
+			
+			<nav>
+		<ul>
+			<li style="display: inline-block; margin: auto;">
+				<p>HTML5</p>
+				<ul>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li style="display: inline-block; margin: auto;">
+				<p>CSS3</p>
+				<ul>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li style="display: inline-block; margin: auto;">
+				<p>JavaScript</p>
+				<ul>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+					<li>
+						<a href="">데이터</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+			</nav>
+			
+			<div id="content">
+				<section>
+				</section>
+			</div>
+			
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

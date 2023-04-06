@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+</head>
+<body>
+	<h1>하이펑크에서 사용할 수 있는 pseudo선택자</h1>
+	<a href="http://www.google.com">구글</a>
+	<a href="https://www.multicampus.com/main">��Ƽķ�۽�</a>
+	<a href="http://data.seoul.go.kr">����� �����ͼ���</a>
+	<a href="http://www.data.go.kr">���� �����ͼ���</a>
+</body>
+</html>

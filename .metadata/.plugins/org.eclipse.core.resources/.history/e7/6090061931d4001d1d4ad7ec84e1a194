@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			*{
+				color: blue;
+			}
+			
+			/* li{
+				color:red;
+			} */
+			
+			.mycontent{
+				color:orange;
+			}
+			
+			
+			#myid{
+				background-color: red;
+			}
+						
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li class="mycontent">HTML</li>
+				<li id ="myid">CSS</li>
+				<li id ="myid">javascript</li>
+			</ul>
+			
+			<div>servlet</div>
+			<p class="mycontent">jsp</p>
+			<div>spring</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			*{
+				color: blue;
+			}
+			
+			/* li{
+				color:red;
+			} */
+			
+			.mycontent{
+				color:purple;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li class="mycontent">HTML</li>
+				<li>CSS</li>
+				<li>javascript</li>
+			</ul>
+			
+			<div>servlet</div>
+			<p class="mycontent">jsp</p>
+			<div>spring</div>
+		</div>
+	</body>
+</html>

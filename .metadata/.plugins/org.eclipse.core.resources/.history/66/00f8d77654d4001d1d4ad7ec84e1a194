@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<body>
+		<h1>CSS3 Basic</h1>
+		<ul>
+			<li id="first" class="active">CSS3 Selector</li>
+			<li>CSS3 Property</li>
+			<li>CSS3 Skill</li>
+		</ul>
+	</body>
+</html>
