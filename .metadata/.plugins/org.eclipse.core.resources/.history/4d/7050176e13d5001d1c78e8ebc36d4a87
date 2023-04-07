@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="mydiv1">플로팅은 문서의 흐름을 제어한다.</div>
+			<div id="mydiv1">플로팅은 문서의 흐름을 제어한다.</div>
+			<div id="mydiv1">플로팅은 문서의 흐름을 제어한다.</div>
+		</div>
+	</body>
+	<style>
+		#outer{
+			width: 1000px;
+			margin:0 auto;
+			border:1px solid orange;
+		}
+		#mydiv1{
+			border:solid 1px black;
+			width: 300px;
+		}
+	</style>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			#blue{
+				top:20px;
+				left:95px;
+				position:absolute;
+				z-index: 5;
+				width: 90px;
+				height: 90px;
+				border: solid 14px #0897f6;
+			}
+			#green{
+				top:40px;
+				left:70px;
+				position:absolute;
+				z-index: 2;
+				width: 50px;
+				height: 50px;
+				border: solid 14px #a0d781;
+			}
+			#red{
+				top:70px;
+				left:20px;
+				position:absolute;
+				z-index: 3;
+				width: 60px;
+				height: 60px;
+				border: solid 14px #f13807;
+			}
+			#yellow{
+				top:120px;
+				left:40px;
+				position:absolute;
+				z-index: 4;
+				width: 85px;
+				height: 85px;
+				border: solid 14px #ffe364;
+			}
+			#text1{
+				top:150px;
+				left:80px;
+				position:absolute;
+				z-index: 100;
+			}
+			#text2{
+				top:155px;
+				left:80px;
+				position:absolute;
+				z-index: 100;
+			}
+			h1 , h4{
+				margin:0;
+			}
+			h4{
+				font-family:Arial Black, Helvetica, sans-serif;
+				left:30px;
+			}
+			
+			h2{
+				font-family:  Arial, Helvetica, sans-serif;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="blue"></div>
+		<div id="green"></div>
+		<div id="red"></div>
+		<div id="yellow"></div>
+		<div id="text1">
+			<h4>Microsoft</h4>
+		</div>
+		<div id="text2">
+			<h1>Internet Explorer</h1>
+		</div>
+	</body>
+</html>

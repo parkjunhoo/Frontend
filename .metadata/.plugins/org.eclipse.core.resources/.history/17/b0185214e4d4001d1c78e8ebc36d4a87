@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			#blue{
+				position:absolute;
+				z-index: 3;
+				width: 300px;
+				height: 300px;
+				border: solid 5px #0897f6;
+			}
+			#green{
+				position:absolute;
+				z-index: 2;
+				width: 100px;
+				height: 100px;
+				border: solid 3px #a0d781;
+			}
+			#red{
+				position:absolute;
+				z-index: 3;
+				width: 150px;
+				height: 150px;
+				border: solid 3px #f13807;
+			}
+			#yellow{
+				position:absolute;
+				z-index: 4;
+				width: 275px;
+				height: 275px;
+				border: solid 3px #ffe364;
+			}
+			#text{
+				position:absolute;
+				z-index: 100;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="blue"></div>
+		<div id="green"></div>
+		<div id="red"></div>
+		<div id="yellow"></div>
+		<div id="text"></div>
+	</body>
+</html>

@@ -14,14 +14,52 @@
     p.inset {border-style:inset;}
     p.outset {border-style:outset;}
     p.hidden {border-style:hidden;}
+    
+    body{
+    	font-family: HY견고딕,궁서체
+    }
+    
+    #container{
+    	border : solid red 1px;
+    	background-color: yellow;
+    	width: 80%;
+    	padding:100px;
+    	margin:0 auto;
+    }
+    
+    .rect{
+    	border: solid blue 1px;
+    	width: 400px;
+    	height: 400px;
+    	margin: 10px;
+    }
+    .rect2{
+    	border: solid blue 1px;
+    	width: 400px;
+    	height: 400px;
+    }
+    
+    img{
+    	width:300px;
+    	height:300px;
+    }
+    
+    #mybts{
+    	border-radius: 50%;
+    }
 </style>
 </head>
 <body>
-	<div class="rect">
-		지금은 CSS연습 중입니다.
-	</div>
-	<div class="rect2">
-		지금은 CSS연습 중입니다.
+
+	<div id="container">
+		<div class="rect">
+			<h1>지금은 CSS연습 중입니다.</h1>
+			<img src="/clientweb/images/bts.jpg" alt="bts"/>
+		</div>
+		<div class="rect2">
+			<h1>지금은 CSS연습 중입니다.</h1>
+			<img id="mybts" src="/clientweb/images/bts.jpg" alt="bts"/>
+		</div>
 	</div>
 	
 	<p class="none">No border.</p>
@@ -34,6 +72,7 @@
 	<p class="inset">An inset border.</p>
 	<p class="outset">An outset border.</p>
 	<p class="hidden">A hidden border.</p>
+	
 </body>
 </html>
 

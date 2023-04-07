@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type ="text/css">
+			div{
+				width:200px;
+				height:200px;
+				background-color: orange;
+				background-image: url("https://cdn.mkhealth.co.kr/news/photo/202010/50970_51164_4758.jpg");
+				background-position: center;
+				background-size: cover;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

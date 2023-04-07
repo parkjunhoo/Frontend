@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<div id="outer">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</body>
+	
+	<style>
+		#outer{
+			display: flex;
+			flex-wrap:wrap;
+			/* width:500px;
+			height:500px; */
+			border: 3px solid red;
+			justify-content: center;
+			align-items: center;
+			background-color: pink;
+		}
+		#outer .item{
+			width:100px;
+			height:100px;
+			border: 3px solid blue;
+			background-color: orange;
+		}
+	</style>
+</html>

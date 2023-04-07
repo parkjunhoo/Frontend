@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.highlight{
+	background-color: #a7cece;
+	padding-bottom: 50px;
+	font-style: italic;
+	display: inline-block;
+}
+.highlight p{
+	margin-top : 50px;
+	font-style: italic;
+}
