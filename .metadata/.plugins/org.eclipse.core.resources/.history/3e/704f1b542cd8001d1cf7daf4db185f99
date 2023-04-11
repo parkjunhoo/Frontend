@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			let point = 99;
+			let myval = 0;
+			if(point > 90){
+				let ifval = "test";
+				myval = 2000;
+				console.log("if블럭에서 정의된 val=>"+ifval);
+			}
+			console.log("point=>"+point);
+			console.log("myval(head)=>"+myval);
+			
+			console.log("if블럭에서 정의된 val=>"+ifval);
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("myval(body)=>"+myval);
+		</script>
+	</body>
+</html>

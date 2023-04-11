@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<!-- prompt로 점수를 -->
+		<script type="text/javascript">
+			var score = parseInt(prompt("점수 입력"));
+			var result = "";
+/* 			if(score > 100 || score < 0){
+				result = "점수잘못입력";
+			}else if(score >= 90){
+				result ="수";
+			}else if(score >= 80){
+				result ="우";
+			}else if(score >= 70){
+				result ="미";
+			}else if(score >= 60){
+				result ="양";
+			}else if(score < 60){
+				result ="가";
+			} */
+			if(score > 100 || score < 0){
+				result ="잘못입력"
+			}else{
+				switch(score){
+					
+				}
+			}
+			
+			
+			document.write("<h1>"+result+"</h1>");
+			
+		</script>
+	</body>
+</html>

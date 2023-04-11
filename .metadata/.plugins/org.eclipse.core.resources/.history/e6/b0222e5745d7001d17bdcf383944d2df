@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.container{
+		width:1000px;
+		height:450px;
+		float:left;
+		background-color: skyblue;
+	}
+	
+	.container .flowers{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	
+	.container .flowers .flower{
+		width: 100px;
+		height: 100px;
+		border: solid 1px white;
+		box-sizing: content-box;
+		transform : skewX(-15deg);
+		border-radius: 15%;
+	}
+	
+	.container .flowers .flower{
+		width: 100px;
+		height: 100px;
+		border: solid 1px black;
+	}
+	
+	.container .flowers:nth-child(1){
+		background-image: url("/clientweb/images/flower1");
+	}
+	.container .flowers .flower:nth-child(2){
+		background-image: url("/clientweb/images/flower2");
+	}
+	.container .flowers .flower:nth-child(3){
+		background-image: url("/clientweb/images/flower3");
+	}
+	.container .flowers .flower:nth-child(4){
+		background-image: url("/clientweb/images/flower4");
+	}
+	.container .flowers .flower:nth-child(5){
+		background-image: url("/clientweb/images/flower5");
+	}
+	.container .flowers .flower:nth-child(6){
+		background-image: url("/clientweb/images/flower6");
+	}
+	.container .flowers .flower:nth-child(7){
+		background-image: url("/clientweb/images/flower7");
+	}
+	.container .flowers .flower:nth-child(8){
+		background-image: url("/clientweb/images/flower8");
+	}
+	.container .flowers .flower:nth-child(9){
+		background-image: url("/clientweb/images/flower9");
+	}
+	.container .flowers .flower:nth-child(10){
+		background-image: url("/clientweb/images/flower10");
+	}
+	
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="flowers">
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+			<div class="flower">
+				<div class="img"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

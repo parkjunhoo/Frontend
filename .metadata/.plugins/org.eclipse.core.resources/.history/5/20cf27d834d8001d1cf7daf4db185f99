@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>1. 함수의 표현식</h1>
+		<script type="text/javascript">
+			var myfunction1 = function(num){
+				if(num>90) console.log("합격");
+				else console.log("불합격");
+			}
+			myfunction1(100);
+		</script>
+	</body>
+</html>

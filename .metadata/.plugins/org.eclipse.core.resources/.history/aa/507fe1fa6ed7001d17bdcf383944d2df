@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<input type="button" value="js 함수연결1" onclick="">		
+		<input type="button" value="js 함수연결2" onclick="">		
+		<input type="button" value="js 함수연결3" onclick="">		
+	</body>
+</html>

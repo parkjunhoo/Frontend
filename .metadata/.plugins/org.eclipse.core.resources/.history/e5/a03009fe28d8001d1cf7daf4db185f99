@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//자바스크립트에서 전역변수(grlobal변수)와 지역변수를 사용할 수 있다.
+			//1. function 밖에서 변수를 선언하는 경우
+			num1 = 100;
+			function test1(){
+				document.write("test1에서 num1을 사용=>"+num1+"<br/>");
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>

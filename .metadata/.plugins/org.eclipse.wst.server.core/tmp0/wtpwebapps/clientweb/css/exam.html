@@ -3,6 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+	.container{
+		width:1000px;
+		height:450px;
+		background-color: skyblue;
+		display:flex;
+	}
+	
+	.container .flowers{
+		display: flex;
+		align-self:center;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.container .flowers .flower .img{
+		width: 100px;
+		height: 100px;
+		margin:3px;
+		border: solid 2px white;
+		box-sizing: content-box;
+		transform : skewX(-15deg);
+		border-radius: 15%;
+		background-size: cover;
+		background-color: gray;
+	}
+	
+	.container .flowers .img:hover{
+		transform: scale(1.1) skewX(-15deg);
+		transition: .5s;
+	}
+	
+	.container .flowers .flower:nth-child(1) .img{
+		background-image: url("/clientweb/images/flower1.png");
+	}
+	.container .flowers .flower:nth-child(2) .img{
+		background-image: url("/clientweb/images/flower2.png");
+	}
+	.container .flowers .flower:nth-child(3) .img{
+		background-image: url("/clientweb/images/flower3.png");
+	}
+	.container .flowers .flower:nth-child(4) .img{
+		background-image: url("/clientweb/images/flower4.png");
+	}
+	.container .flowers .flower:nth-child(5) .img{
+		background-image: url("/clientweb/images/flower5.png");
+	}
+	.container .flowers .flower:nth-child(6) .img{
+		background-image: url("/clientweb/images/flower6.png");
+	}
+	.container .flowers .flower:nth-child(7) .img{
+		background-image: url("/clientweb/images/flower7.png");
+	}
+	.container .flowers .flower:nth-child(8) .img{
+		background-image: url("/clientweb/images/flower8.png");
+	}
+	.container .flowers .flower:nth-child(9) .img{
+		background-image: url("/clientweb/images/flower9.png");
+	}
+	.container .flowers .flower:nth-child(10) .img{
+		background-image: url("/clientweb/images/flower10.png");
+	}
+	.container .flowers .flower:nth-child(11) .img{
+		background-image: url("/clientweb/images/flower1.png");
+	}
+	.container .flowers .flower:nth-child(12) .img{
+		background-image: url("/clientweb/images/flower2.png");
+	}
+	.container .flowers .flower:nth-child(13) .img{
+		background-image: url("/clientweb/images/flower3.png");
+	}
+	.container .flowers .flower:nth-child(14) .img{
+		background-image: url("/clientweb/images/flower4.png");
+	}
+	.container .flowers .flower:nth-child(15) .img{
+		background-image: url("/clientweb/images/flower5.png");
+	}
+	
+</style>
 </head>
 <body>
 	<div class="container">

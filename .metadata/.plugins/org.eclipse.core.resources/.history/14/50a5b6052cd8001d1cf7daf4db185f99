@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			let point = 99;
+			let myval = 0;
+			if(point > 90){
+				myval = 2000;
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>

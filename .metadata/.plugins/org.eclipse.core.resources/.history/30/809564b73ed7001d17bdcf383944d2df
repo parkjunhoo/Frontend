@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+			div:active{
+				width: 300px;
+				background-color: royalblue;
+				transition: 1s;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

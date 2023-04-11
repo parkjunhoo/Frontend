@@ -213,4 +213,21 @@
   *레이아웃
   
   
+  *애니메이션 및 효과
+  
+  	1)transition
+  	2)transform
+  		요소에 변환 효과
+  		transform: 변환함수1 변환함수2 ...
+  		transform : 원근법 요소의 크기 요소의 회전 요소의 이동 요소의 기울임...
+  		
+  		-2D변환 함수
+  			rotate(각도)
+  			scale(x,y)
+  			skewX(각도)
+			translate(픽셀단위)  			
+  		-3D변환 함수
+  			rotateX
+  			
+  			
   

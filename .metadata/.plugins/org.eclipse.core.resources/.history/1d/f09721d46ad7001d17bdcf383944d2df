@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<!-- body태그 내부에서 정의하고 사용하는 방법 -->
+		<script type="text/javascript">
+			document.write("<h1>브라우저에 html태그 실행하서 출력하기</h1>");
+			
+		</script>		
+	</body>
+</html>

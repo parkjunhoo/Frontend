@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//Date객체를 생성하고 사용하기
+			var today = new Date();
+			document.write(today+"<br>");
+			document.write(today.toString+"<br>");
+			
+			var str = today.getFullYear()+"년";
+			str += today.getMonth()+"월";
+			str += today.getMonth()+"월";
+			str += today.getMonth()+"월";
+			str += today.getMonth()+"월";
+			str += today.getMonth()+"월";
+		</script>
+	</body>
+</html>

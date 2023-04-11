@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function printGugu(){
+				var html = "<table border='1'>";
+				for(x=1; x<=9; x++){
+					html += "<tr>";
+					for(y=1; y<=9; y++){
+							html += "<td>"+x+"*"+y+"="+(x*y)+"</td>";
+					}
+					html += "</tr>";
+				}
+				html += "</table>";
+				
+				document.write(html);
+			}
+			
+			function getSum(num1,num2){
+				sum = 0;
+				for(i=num1; i<=num2; i++){
+					sum += i;
+				}
+				return sum;
+			}
+			
+			function calc(num1,num2,opr){
+				switch(opr){
+					case "+":
+						return num1+num2;
+					case "-":
+						return num1-num2;
+					case "*":
+						return num1*num2;
+					case "/":
+						return num1/num2;
+					default:
+						return null;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			printGugu();
+			document.write("<h1>"+getSum(1,10)+"</h1>");
+			document.write("<br><h1>"+calc(1,1,"+")+"</h1>");
+		</script>
+	</body>
+</html>

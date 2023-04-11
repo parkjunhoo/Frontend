@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var today = new Date();
+			if(today.getHours() < 12){
+				document.bgColor = "green"
+			}else{
+				document.bgColor = "red"
+			}
+			
+			var src = "";
+			console.log(today.getDay);
+			switch(today.getDay){
+				case 0:
+					src="jang1.jpg";
+					break;
+				case 1:
+					src="jang2.jpg";
+					break;
+				case 2:
+					src="jang3.jpg";
+					break;
+				case 3:
+					src="jang4.jpg";
+					break;
+				case 4:
+					src="jang5.jpg";
+					break;
+				case 5:
+					src="jang6.jpg";
+					break;
+				case 6:
+					src="jang7.jpg";
+					break;
+					
+				default:
+					src="jang7.jpg";
+				
+			}
+			console.log(src);
+			document.write("<img src='/clientweb/images/"+src+"'/>");
+			
+		</script>
+	</body>
+</html>

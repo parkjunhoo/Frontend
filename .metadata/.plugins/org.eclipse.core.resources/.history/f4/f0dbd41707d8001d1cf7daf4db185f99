@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<talbe border='1' width='500'>");
+			document.write("<tr>");
+			document.write("<td>1</td><td>2</td><td>3</td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td>1</td><td>2</td><td>3</td>");
+			document.write("</tr>");
+			document.write("</table>");
+			document.write("<img src='/clientweb/images/bts.jpg'/>");
+			
+			//if 중첩
+			var num = prompt("숫자를 입력하세요.");
+			if(num==null){
+				alert("취소 버튼을 누르지 마세요.");
+			}else{
+				if(num%5==0){
+					document.write("<h1>5의 배수</h1>");
+				}else{
+					document.write("<h1>5의 배수가 아니다</h1>");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

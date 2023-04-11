@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function test1(){
+				alert("f");
+			}
+			function test2(){
+				alert(confirm("q?"));
+			}
+			function test3(){
+				alert(prompt("fav?"));
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="js 함수연결1" onclick="test1()">		
+		<input type="button" value="js 함수연결2" onclick="test2()">		
+		<input type="button" value="js 함수연결3" onclick="test3()">
+		<a href="./test1()">atag</a>		
+	</body>
+</html>

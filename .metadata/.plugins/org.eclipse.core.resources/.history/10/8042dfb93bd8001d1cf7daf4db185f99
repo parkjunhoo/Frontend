@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var today = new Date();
+			if(today.getHours() < 12){
+				document.bgColor = "green"
+			}else{
+				document.bgColor = "red"
+			}
+			
+			switch(today.getDay){
+				case 0:
+					break;
+			}
+			
+		</script>
+	</body>
+</html>

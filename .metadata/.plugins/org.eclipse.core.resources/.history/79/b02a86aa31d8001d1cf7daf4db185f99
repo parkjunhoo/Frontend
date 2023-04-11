@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			var x = 10;
+			function test(){
+				console.log("x값=>"+x);
+				console.log("y값=>"+y);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>함수와 변수의 호이스팅</h1>
+		<script type="text/javascript">
+			test(1000);
+			function test(num){
+				
+			}
+		</script>
+	</body>
+</html>

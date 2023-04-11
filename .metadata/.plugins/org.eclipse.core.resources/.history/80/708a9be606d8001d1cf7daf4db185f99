@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<talbe border='1' width='500'>");
+			document.write("<tr>");
+			document.write("<td>1</td><td>2</td><td>3</td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td>1</td><td>2</td><td>3</td>");
+			document.write("</tr>");
+		</script>
+	</body>
+</html>
