@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function getOpenerValue() {
+				console.log("팝업이 오픈될 때 실행되는 함수");
+				
+			}
+		</script>
+	</head>
+	<body bgcolor="skyblue" onload="getOpenerValue()">
+		<form name="mypopup">
+			<input type="text" name="id"/>
+			<input type="text" name="addr"/>
+			<input type="submit" value="검색"/>
+			
+			<a href="#">구로동</a><br>
+			<a href="#">서초동</a><br>
+			<a href="#">방배동</a><br>
+			<a href="#">신림동</a><br>
+			<a href="#">상암동</a><br>
+		
+		</form>
+		
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>

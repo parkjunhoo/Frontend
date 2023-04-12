@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+		
+			function showArr(arr){
+				let html = "<br><h1>";
+				let sum = 0;
+				let avg = 0;
+				for(i = 0; i<arr.length; i++){
+					sum += arr[i];
+					html += "점수:"+arr[i]+"<br>";
+				}
+				avg = sum/arr.length;
+				html += "합계:"+sum+"<br>";
+				html += "평균:"+avg+"<br>";
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 배열의 내용을 출력하기 -->
+		<script type="text/javascript">
+		
+			var arr = new Array(99,89,100,100,90);
+			showArr(arr);
+			
+		</script>
+		
+	</body>
+</html>

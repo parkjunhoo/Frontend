@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function check(){
+				var id = joinForm.id.value;
+				if(id.length<4){
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="joinForm">
+			<h1>티몬 회원가입</h1>
+			<h2>필수항목</h1>
+			아이디:<input type="text" name="id" onkeyup="check()">
+			<p style="color:red;"></p>
+		</form>
+	</body>
+</html>
