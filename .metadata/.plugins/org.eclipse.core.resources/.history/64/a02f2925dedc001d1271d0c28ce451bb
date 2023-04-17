@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- defer html문서를 다 읽은 후에 자바스크립트를 실행하라는 의미 -->
+		<!-- <script defer="defer" type="text/javascript" src="/clientweb/common/js/domtest.js"></script> -->
+	</head>
+	<body>
+		<div class="mybox">
+			box
+		</div>
+		<div id="mydiv">
+			box
+		</div>
+		
+		<div class="items">java</div>
+		<div class="items">javascript</div>
+		<div class="items">spring</div>
+		<div class="items">springboot</div>
+		
+		<script type="text/javascript" src="/clientweb/common/js/domtest.js"></script>
+		<script type="text/javascript">
+			//items라는 이름으로 class명이 정의된 모든
+			console.log("*******************************");
+			let items = document.querySelectorAll(".items");
+			console.log(items.length);
+			//NodeList의 모든 Node에 반복작업
+			items.forEach((el , i)=>{
+				console.log(el.textContent + ":" + i);
+				console.log("값:"+i);
+				el.classList.add(`subject-${i+1}`);
+				console.log(`값: ${i}`);
+			});
+		</script>
+	</body>
+</html>

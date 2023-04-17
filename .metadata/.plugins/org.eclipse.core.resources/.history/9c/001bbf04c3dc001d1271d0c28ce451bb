@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+let divobj1 = document.querySelector(".mybox");
+let divobj2 = document.querySelector("#mydiv");
+
+console.log(divobj1);
+console.log(divobj2);

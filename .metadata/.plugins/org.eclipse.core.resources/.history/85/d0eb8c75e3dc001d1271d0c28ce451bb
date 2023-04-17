@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = () => {
+	
+	document.getElementById("btn4").onload = mycallback;
+	
+	function mycallback(){
+		alert("mycallback - 4번버튼");
+		//1. id가 myform인 객체를 구하기
+		let myform = document.getElementById("myform");
+		//2. myform객체의 자식 노드를 구하기
+		let children = myform.children;
+		//3. 2번에서 구한 노드의 모든 자식노드 탐색 for문
+		for(i =0; i<children.length; i++){
+			for(o=0; o<children[i].children.length; o++){
+				//4. 3번에서 자식 노드를 탐색하면서 노드이름과 id 속성값 출력
+				console.log(`${i}번째 자식노드 :${children[i]}`);
+				console.log(`$자식노드의 자식노드 :${children[i].children}`);
+				console.log("===============================")
+			}
+		}
+	}
+};
+</script>
+</head>
+<body>
+	<form id ="myform">
+		<input id="btn1" type="button" value="1번버튼"/>
+		<input id="btn2" type="button" value="2번버튼"/>
+		<input id="btn3" type="button" value="3번버튼"/>
+		<input id="btn4" type="button" value="4번버튼"/>
+	</form>
+</body>
+</html>

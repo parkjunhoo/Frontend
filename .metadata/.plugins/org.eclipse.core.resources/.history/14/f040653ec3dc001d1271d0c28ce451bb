@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+let divobj1 = document.querySelector(".mybox");
+let divobj2 = document.querySelector("#mydiv");
+
+let divobj3 = document.getElementsByClassName("mybox");
+let divobj4 = document.getElementByid("mydiv");
+
+console.log(divobj1);
+console.log(divobj2);
+console.log("======================");
+console.log(divobj3);
+console.log(divobj4);

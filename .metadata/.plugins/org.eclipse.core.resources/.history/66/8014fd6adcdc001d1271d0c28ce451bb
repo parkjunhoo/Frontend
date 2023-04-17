@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input id="btn1" type="button" value="1번버튼"/>
+		<input id="btn2" type="button" value="2번버튼"/>
+		<input id="btn3" type="button" value="3번버튼"/>
+		<input id="btn4" type="button" value="4번버튼"/>
+	</form>
+	
+	<script type="text/javascript">
+		function mycallback(){
+			alert(":)");
+		}
+		
+		let btns = document.querySelectorAll("input");
+		btns.forEach((el,i)=>{
+			if(i != 3){
+				el.onclick = () =>{
+					alert(":(");
+				}
+			}else{
+				el.onclick = mycallback;
+			}
+			
+		});
+	</script>
+</body>
+</html>
