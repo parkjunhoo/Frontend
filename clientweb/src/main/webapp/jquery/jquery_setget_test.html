@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<p id="test">jQuery 값 설정하기</p>
+		<p>양식태그에서 발생하는 값</p>
+		<div id="result"></div>
+		<div id="result2"></div>
+		<form>
+			<input type="number" id="data1">
+			<input type="number" id="data2">
+			<input type="button" id="btn" value="값가져오기">
+		</form>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#result").text("<h1>h1태그에 값 설정하기</h1> -text()는 html 태그가 실행되지 않는다.");
+				
+				
+				
+				
+				$("#test").css({
+					"color":"red",
+					"border":"solid 1px red"
+				});
+				
+				$("p").hide();
+				
+				$("#data1").on("keyup",function(){
+					//id가 data1인 input에 값이 입력될떄마다 호출
+					var myval =parseInt($("#data1").val())+1000; // input태그의 값을 set/get ---- getter
+					$("#result").text(myval);
+				});
+				
+				$("#btn").on("click",function(){
+					var textVal = $("#result2").text(); // getter
+					$("#data2").value(textVal); // setter
+				});
+			});
+		</script>
+	</body>
+</html>

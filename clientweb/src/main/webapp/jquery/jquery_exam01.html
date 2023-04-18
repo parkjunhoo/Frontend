@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>jquery</title> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		
+		<link rel="stylesheet" href="/clientweb/common/css/my_style2.css"/>
+	</head> 
+	<script type="text/javascript">
+		$(document).ready( function(){
+			
+            $(".gardenimg img").on("mouseover",function(){
+            	let count = Math.floor(Math.random() * 10) + 500;
+            	let p = $("<p>방문자:"+count+"</p>");
+            	$(this).after(p);
+            });
+            
+            $(".gardenimg").on("mouseleave",function(){
+                $(this).empty();
+            });
+		});
+	</script>
+	<body>
+		<div id="header">
+			<h2>아침고요수목원~</h2>
+		</div>
+		<div id="main">
+			<div class="gardenimg"><img src="../images/m_garden01.jpg" /></div>
+			<div class="gardenimg"><img src="../images/m_garden02.jpg"/></div>
+			<div class="gardenimg"><img src="../images/m_garden03.jpg"/></div>
+			<div class="gardenimg"><img src="../images/m_garden05.jpg"/></div>
+		</div>
+		
+		<script>
+		
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
