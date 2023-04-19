@@ -171,6 +171,8 @@ public class CustomerDAOImpl implements CustomerDAO{
 				//로그인을 성공하면 조회된 로그인 사용자의 레코드를 VO로 만들어서 리턴
 				customer = new CustomerVO(rs.getString(1), rs.getString(2), rs.getString(3),
 						rs.getString(4), rs.getDate(5), rs.getInt(6),rs.getString(7));
+			}else {
+				System.out.println("로그인 실패");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
