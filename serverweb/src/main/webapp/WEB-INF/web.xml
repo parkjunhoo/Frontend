@@ -83,4 +83,14 @@
 		<servlet-name>calc</servlet-name>
 		<url-pattern>/calc.do</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>user_login</servlet-name>
+		<servlet-class>basic.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user_login</servlet-name>
+		<url-pattern>/user/login.do</url-pattern>
+	</servlet-mapping>
+
 </web-app>

@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import fw.DBUtil;
+
 //MySQL액세스하기 위한 기능 - customer테이블에 대한  CLRUD를 정의
 public class CustomerDAOImpl implements CustomerDAO{
 	@Override
