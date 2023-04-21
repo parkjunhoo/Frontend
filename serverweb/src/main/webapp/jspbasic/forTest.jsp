@@ -4,7 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>dsts</title>
+<script type="text/javascript">
+	let a = 0;
+</script>
+<style type="text/css">
+	*{
+		color:red;
+	}
+</style>
 </head>
 <body>
 	<table border="1">

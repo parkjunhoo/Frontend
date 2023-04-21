@@ -5,7 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<style type="text/css">
+	*{
+		color:blue;
+	}
+</style>
+<script type="text/javascript">
+	let a = 50;
+</script>
 </head>
 <body>
 	<%

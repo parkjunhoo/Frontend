@@ -14,4 +14,5 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="kr.multicampus.erp.user.EmpDTO"/>
     <fullyQualifiedTypeName name="fw.DBUtil"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

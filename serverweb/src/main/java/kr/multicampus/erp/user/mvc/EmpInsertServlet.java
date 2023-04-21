@@ -1,8 +1,9 @@
-package basic;
+package kr.multicampus.erp.user.mvc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,8 +14,8 @@ import kr.multicampus.erp.user.EmpDAO;
 import kr.multicampus.erp.user.EmpDAOImpl;
 import kr.multicampus.erp.user.EmpDTO;
 
-@WebServlet(name = "emp_insert" ,
-urlPatterns = {"/emp/insert.do"})
+@WebServlet(name = "empInsert_mvc" ,
+urlPatterns = {"/mvc/insert.do"})
 public class EmpInsertServlet extends  HttpServlet{
 	
 	
@@ -38,21 +39,18 @@ public class EmpInsertServlet extends  HttpServlet{
 		PrintWriter pw = res.getWriter();
 		
 		int result = dao.insert(dto);
-		if(dao.insert(dto) == 1) {
-			pw.write("<h1>가입 완료<h1>");
-		}else {
-			pw.write("<h1>가입 실패<h1>");
-		}
 		
-//		req.setAttribute("insertuser", name);
+		req.setAttribute("insertuser", name);
 		
 		String view = ""; //응답할 뷰에 대한 정보
-//		if(result>0) { //정상처리
-//			view = "/serverweb/user_mvc/insertOK.jsp";
-//		}else {
-//			view = "/serverweb/user_mvc/insertFail.jsp";
-//		}
+		if(result>0) { //정상처리
+			view = "/serverweb/user_mvc/insertOK.jsp";
+		}else {
+			view = "/serverweb/user_mvc/insertFail.jsp";
+		}
 		
+		RequestDispatcher rd = req.getRequestDispatcher(view);
+		rd.forward(req, res);
 		//응답뷰가 클라이언트에게 response되도록 재요청
 		res.sendRedirect(view);
 		

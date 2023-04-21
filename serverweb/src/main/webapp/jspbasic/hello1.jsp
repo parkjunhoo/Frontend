@@ -18,5 +18,9 @@
 <body>
 	<img src="/serverweb/images/bts2.jpg" width="300"/>
 	<h2>가입을 환영합니다.</h2>
+	<%
+		RequestDispatcher rd  = request.getRequestDispatcher("/jspbasic/forTest.jsp");
+		rd.include(request,response);
+	%>
 </body>
 </html>

@@ -152,3 +152,82 @@
 	*******자바스크립트로 서블릿 요청하기**********
 	
 	
+	
+	
+[요청재지정]
+	-클라이언트가 최초 요청한 서블릿을 응답하지 않고
+		다른 web application 이 응답되도록 서블릿 내부에서
+		재요청하는 것을 의미
+	
+	-서블릿에서 뷰를 분리하기 위해서 반드시 알아야 하는 개념
+	
+	1. 데이터공유
+		-데이터 공유가 가능한 scope는 page, request , session, application이 있다.
+		-모든 scope를 담당하는 객체가 존재하며 이 객체 내부에는 데이터를 공유할 수 있도록 Map구조의 저장소(모델)를 가지고 있다.
+		Map구조 => name , value를 한쌍으로 저장 (dictionary)
+		
+		1)page (javax.servlet.jsp.PageContext)
+		-현재 jsp 페이지에서 데이터 공유
+		
+		2)request(javax.servlet.ServletRequest)
+		-한 번의 요청으로 실행되는 응답되는 모든 web Application이 데이터를 공유
+		
+		
+	
+		
+	
+	
+	2. 요청재지정
+		1) response객체의 sendRedirect
+		2) RequestDispatcher의 forward - 서블릿에서 주로 사용
+		3) RequestDispatcher의 include = jsp에서 주로 사용
+		
+		
+		
+3. sendRedirect
+	1)문법
+		ServletResponse의 sendRedirect라는 메소드를 이용해서 구현
+		response.sendRedirect("path")
+		------------------------ -> client부터 다시 요청해서 들어가는 것 context까지 지정
+		
+	-최초요청됬엉 서블릿이 res한 후 다시 재용청하는 방법이므로 데이터를 공유할 수 없다.
+	-로그인 아이디나 패스워드를 잘못입력한 경우 로그인 페이지를 다시 보여주기 위한 방법으로 주로 사용
+	- 스프링으로 구축된 시스템은 기본이 forward
+	- 두번의 요청으로 처리하므로 주소표시줄이 요청재지정으로 정의한 web application의 경로로 바뀐다.
+	
+	
+4. forward
+	-가장 일반적으로 사용되는 방법
+	-최초 요청된 서블릿이 응답되지 않고 새로운 web application을 요청한다.
+	-최초 요청받은 서블릿이 실행된 후 요청재지정으로 정의된 application으로 제어가 넘어간다.
+	-한 번의 요청으로 모든 application이 실행되므로 데이터가 공유된다.
+	-한 번의 요청으로 모든 application이 실행되므로 주소표시줄이 최초 요청된 서블릿으로 변경된다.
+	-requestDispatcher의 forward메소드를 호출
+	
+	[문법]
+	RequestDispatcher rd = request.getRequestDispatcher("요청재지정할 app의 path")
+						res하지않고 최초 실행된 서블릿의 실행중에
+						다른 app을 요청하는 것 이므로 context를 정의하지 않는다.
+	
+	rd.forward(request객체, response객체)
+	같은 Req scope에 잇는 객체 (데이터 공유 가능)
+	
+	
+5. include
+	-서블릿보다는 jsp에서 사용되는 방법
+	-최초 요청된 서블릿이 응답되지 않고 새로운 web application을 요청한다.
+	-최초 요청받은 서블릿이 실행된 후 요청재지정으로 정의된 application이 실행되고 다시 최초 요청된 서블릿으로 되돌아가서 response합니다.
+	-한 번의 요청으로 모든 application이 실행되므로 데이터가 공유된다.
+	-한 번의 요청으로 모든 application이 실행되므로 주소표시줄이 최초 요청된 서블릿으로 변경된다.
+	-requestDispatcher의 include메소드를 호출
+	-중간에 실행결과를 포함하는 경우 사용(jsp를 실행하고 실행결과를 가지고 되돌아온다.)
+	
+	[문법]
+	RequestDispatcher rd = request.getRequestDispatcher("요청재지정할 app의 path")
+						res하지않고 최초 실행된 서블릿의 실행중에
+						다른 app을 요청하는 것 이므로 context를 정의하지 않는다.
+	
+	rd.include(request객체, response객체)
+	같은 Req scope에 잇는 객체 (데이터 공유 가능)
+	
+		
