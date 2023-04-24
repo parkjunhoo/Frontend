@@ -33,7 +33,9 @@
 					<%=dto.getName() %>
 				</td>
 				<td>
-					<%=dto.getId() %>
+					<a href="/serverweb/EmpReadServlet?id=<%=dto.getId()%>">
+						<%=dto.getId() %>
+					</a>
 				</td>
 				<td>
 					<%=dto.getPass() %>
@@ -51,5 +53,6 @@
 		<%}
 	%>
 	</table>
+	
 </body>
 </html>

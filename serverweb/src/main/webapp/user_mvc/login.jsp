@@ -15,7 +15,7 @@
 				<jsp:include page="/layout/servlet_menu.jsp" />
 			</div>
 			<div class="col-Lg-10">
-				<form name="login_frm" action="/serverweb/jspbasic/requestObj.jsp"
+				<form name="login_frm" action="/serverweb/emplogin"
 					method="post">
 					<table cellpadding="0" cellspacing=5 width="815" bgcolor=#f3f3f3>
 						<tr>

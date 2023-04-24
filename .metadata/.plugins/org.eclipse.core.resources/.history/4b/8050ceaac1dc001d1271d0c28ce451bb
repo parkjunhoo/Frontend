@@ -1,5 +1,0 @@
-/**
- * 
- */
-let divobj = document.querySelector(".mybox");
-let divobj = document.querySelectorAll("#mydiv");

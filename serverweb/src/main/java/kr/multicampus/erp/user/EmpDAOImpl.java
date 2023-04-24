@@ -88,6 +88,59 @@ public class EmpDAOImpl implements EmpDAO{
 		
 		return result;
 	}
+
+	@Override
+	public EmpDTO read(String id) {
+		System.out.println(id);
+		String sql = "select * from myemp where id=?";
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		ResultSet rs = null;
+		
+		EmpDTO emp = null;
+		try {
+				con=DBUtil.getConnect();
+				ptmt = con.prepareStatement(sql);
+				ptmt.setString(1, id);
+				
+				rs =  ptmt.executeQuery();
+				rs.next();
+				emp = new EmpDTO(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7));
+			}catch (SQLException e) {
+			e.printStackTrace();
+			}finally {
+				DBUtil.close(rs, ptmt, con);
+			}
+		
+		System.out.println(emp.getName());
+		return emp;
+	}
+	
+	public EmpDTO login(EmpDTO user) {
+		String sql = "select * from myemp where id=? and pass=?";
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		ResultSet rs = null;
+		
+		EmpDTO emp = null;
+		try {
+				con=DBUtil.getConnect();
+				ptmt = con.prepareStatement(sql);
+				ptmt.setString(1, user.getId());
+				ptmt.setString(2, user.getPass());
+				
+				rs =  ptmt.executeQuery();
+				rs.next();
+				emp = new EmpDTO(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7));
+			}catch (SQLException e) {
+			e.printStackTrace();
+			}finally {
+				DBUtil.close(rs, ptmt, con);
+			}
+		
+		System.out.println(emp.getName());
+		return emp;
+	}
 	
 	
 	

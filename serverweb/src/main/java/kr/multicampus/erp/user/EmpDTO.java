@@ -40,6 +40,13 @@ public class EmpDTO {
 		this(deptno, name, id, pass, addr, grade);
 		this.point = point;
 	}
+	
+	//로그인용
+	public EmpDTO(String id, String pass) {
+		super();
+		this.id = id;
+		this.pass = pass;
+	}
 	@Override
 	public String toString() {
 		return "EmpDTO [deptno=" + deptno + ", name=" + name + ", id=" + id + ", pass=" + pass + ", addr=" + addr

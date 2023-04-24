@@ -1,3 +1,4 @@
+<%@page import="kr.multicampus.erp.user.EmpDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,8 +11,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	
+	EmpDTO user = (EmpDTO)request.getAttribute("user");
+	String userName="";
+	if(user!= null) userName = user.getName();
+	
+%>
+	
 	<h4>
 		<small>즐거운 web</small>
+		<%=userName %>님 환영합니다.
 	</h4>
 	<hr>
 	<div class="col-sm-10">

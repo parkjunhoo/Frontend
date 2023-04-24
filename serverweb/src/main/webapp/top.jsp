@@ -1,3 +1,4 @@
+<%@page import="kr.multicampus.erp.user.EmpDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,11 +19,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
+      <% 
+	  	EmpDTO user = (EmpDTO)request.getAttribute("user");
+	  	String userName="";
+	  	boolean isLoggedIn = user!= null;
+	  	if(isLoggedIn){userName = user.getName();
+      %>
+      <a style="color:red;" ><%=userName %></a>
+      <%} %>
       <a class="navbar-brand" href="#">자바나라</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="/serverweb/index.jsp">Home</a></li>
       <!--   <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">서블릿basic <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -35,11 +44,16 @@
         <li><a href="#">JSP basic</a></li>
         <li><a href="#">부서관리</a></li>
         <li><a href="/serverweb/user/_mvc/list.jsp">인사관리</a></li>
-        <li><a href="/serverweb/user/_mvc/list.jsp">고급기능</a></li>
+        <li><a href="/serverweb/board/list.do">게시판</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/serverweb/jspbasic/list.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        
+        <%if(isLoggedIn){%>
         <li><a href="/serverweb/user_mvc/login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <%}else{ request.setAttribute("user", null); %>
+        <li><a href="/serverweb/user_mvc/login.jsp"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
+      	<%} %>
       </ul>
     </div>
   </div>

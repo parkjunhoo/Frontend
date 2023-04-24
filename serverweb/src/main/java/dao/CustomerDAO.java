@@ -13,4 +13,5 @@ public interface CustomerDAO {
 	ArrayList<CustomerVO> getMemberList() ;
 	//사원의 상세 정보 조회하기
 	CustomerVO getCustomerInfo(String id);
+	
 }

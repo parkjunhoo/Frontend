@@ -7,4 +7,8 @@ public interface EmpDAO {
 	public int insert(EmpDTO user);
 	public ArrayList<EmpDTO> select();
 	public int delete(String id);
+	public EmpDTO read(String id);
+	
+	
+	public EmpDTO login(EmpDTO user);
 }
