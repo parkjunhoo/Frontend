@@ -13,7 +13,7 @@
 <body>
 <%
 	
-	EmpDTO user = (EmpDTO)request.getAttribute("user");
+	EmpDTO user = (EmpDTO)session.getAttribute("user");
 	String userName="";
 	if(user!= null) userName = user.getName();
 	

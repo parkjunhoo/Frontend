@@ -20,10 +20,9 @@
         <span class="icon-bar"></span>                        
       </button>
       <% 
-	  	EmpDTO user = (EmpDTO)request.getAttribute("user");
+	  	EmpDTO user =(EmpDTO) session.getAttribute("user");
 	  	String userName="";
-	  	boolean isLoggedIn = user!= null;
-	  	if(isLoggedIn){userName = user.getName();
+	  	if(user != null){userName = user.getName();
       %>
       <a style="color:red;" ><%=userName %></a>
       <%} %>
@@ -49,10 +48,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/serverweb/jspbasic/list.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         
-        <%if(isLoggedIn){%>
+        <%if(user == null){%>
         <li><a href="/serverweb/user_mvc/login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <%}else{ request.setAttribute("user", null); %>
-        <li><a href="/serverweb/user_mvc/login.jsp"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
+        <%}else{ %>
+        <li><a href="/serverweb/logout.do"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
       	<%} %>
       </ul>
     </div>

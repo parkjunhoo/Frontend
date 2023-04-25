@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\clientweb" path="/clientweb" reloadable="true" source="org.eclipse.jst.jee.server:clientweb"/><Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\serverweb" path="/serverweb" reloadable="true" source="org.eclipse.jst.jee.server:serverweb"/></Host>
+      <Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\clientweb" path="/clientweb" reloadable="true" source="org.eclipse.jst.jee.server:clientweb"/><Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\serverweb" path="/serverweb" reloadable="true" source="org.eclipse.jst.jee.server:serverweb"/><Context docBase="C:\javaweb\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\FrontController" path="/FrontController" reloadable="true" source="org.eclipse.jst.jee.server:FrontController"/></Host>
     </Engine>
   </Service>
 </Server>
